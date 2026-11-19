@@ -1,0 +1,15 @@
+Code,Account,Debit,Credit
+1010,Cash,55600.0,0
+1020,Accounts Receivable,9000.0,0
+1030,Supplies,3700.0,0
+1040,Equipment,12000.0,0
+2010,Accounts Payable,0,0.0
+2020,Notes Payable,0,12500.0
+3010,Owner's Capital,0,50000.0
+3020,Owner's Drawings,2000.0,0
+4010,Service Revenue,0,27200.0
+5010,Rent Expense,2500.0,0
+5020,Salaries Expense,3500.0,0
+5030,Utilities Expense,600.0,0
+5040,Advertising Expense,800.0,0
+,TOTAL,89700.0,89700.0

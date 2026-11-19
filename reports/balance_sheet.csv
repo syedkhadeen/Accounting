@@ -1,0 +1,19 @@
+Assets
+,Cash,55600.0
+,Accounts Receivable,9000.0
+,Supplies,3700.0
+,Equipment,12000.0
+Total Assets,,80300.0
+
+Liabilities
+,Accounts Payable,0.0
+,Notes Payable,12500.0
+Total Liabilities,,12500.0
+
+Equity
+,Owner's Capital,50000.0
+,Owner's Drawings,-2000.0
+,Net Income,19800.0
+Total Equity,,67800.0
+
+Balanced (Assets = Liabilities + Equity),,True

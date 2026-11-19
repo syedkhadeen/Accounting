@@ -1,0 +1,29 @@
+@startuml processing_flow
+title Processing Flow - Accounting Cycle
+
+start
+:Business event occurs;
+:Create journal entry
+(debit/credit lines keyed to accounts);
+if (total debit == total credit?) then (no)
+  :Reject entry
+  (raise UnbalancedEntryError);
+  stop
+else (yes)
+  :Insert into journal_entries
+  + journal_lines;
+  :Post to General Ledger
+  (grouped by account, running balance);
+  :Compute Trial Balance
+  (sum of ending balances by column);
+  fork
+    :Compute Income Statement
+    (Revenue - Expense accounts);
+  fork again
+    :Compute Balance Sheet
+    (Asset = Liability + Equity + Net Income);
+  end fork
+  stop
+endif
+
+@enduml

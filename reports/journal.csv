@@ -1,0 +1,47 @@
+Entry ID,Date,Reference,Description,Account Code,Account,Debit,Credit
+1,2026-11-01,JE-01,Owner invested cash to start the business,1010,Cash,50000.0,0.0
+1,2026-11-01,JE-01,Owner invested cash to start the business,3010,Owner's Capital,0.0,50000.0
+2,2026-11-01,JE-02,Purchased equipment for cash,1040,Equipment,12000.0,0.0
+2,2026-11-01,JE-02,Purchased equipment for cash,1010,Cash,0.0,12000.0
+3,2026-11-02,JE-03,Purchased supplies on account,1030,Supplies,3000.0,0.0
+3,2026-11-02,JE-03,Purchased supplies on account,2010,Accounts Payable,0.0,3000.0
+4,2026-11-03,JE-04,Borrowed cash from bank (note payable),1010,Cash,15000.0,0.0
+4,2026-11-03,JE-04,Borrowed cash from bank (note payable),2020,Notes Payable,0.0,15000.0
+5,2026-11-04,JE-05,Billed client for services rendered on account,1020,Accounts Receivable,8000.0,0.0
+5,2026-11-04,JE-05,Billed client for services rendered on account,4010,Service Revenue,0.0,8000.0
+6,2026-11-05,JE-06,Received cash for services rendered,1010,Cash,6000.0,0.0
+6,2026-11-05,JE-06,Received cash for services rendered,4010,Service Revenue,0.0,6000.0
+7,2026-11-06,JE-07,Paid rent for the month,5010,Rent Expense,2500.0,0.0
+7,2026-11-06,JE-07,Paid rent for the month,1010,Cash,0.0,2500.0
+8,2026-11-07,JE-08,Paid partial amount owed to supplier,2010,Accounts Payable,1000.0,0.0
+8,2026-11-07,JE-08,Paid partial amount owed to supplier,1010,Cash,0.0,1000.0
+9,2026-11-08,JE-09,Received partial payment from client,1010,Cash,4000.0,0.0
+9,2026-11-08,JE-09,Received partial payment from client,1020,Accounts Receivable,0.0,4000.0
+10,2026-11-09,JE-10,Paid salaries to staff,5020,Salaries Expense,3500.0,0.0
+10,2026-11-09,JE-10,Paid salaries to staff,1010,Cash,0.0,3500.0
+11,2026-11-10,JE-11,Paid electricity and water bill,5030,Utilities Expense,600.0,0.0
+11,2026-11-10,JE-11,Paid electricity and water bill,1010,Cash,0.0,600.0
+12,2026-11-11,JE-12,Owner withdrew cash for personal use,3020,Owner's Drawings,2000.0,0.0
+12,2026-11-11,JE-12,Owner withdrew cash for personal use,1010,Cash,0.0,2000.0
+13,2026-11-12,JE-13,Paid for newspaper advertisement,5040,Advertising Expense,800.0,0.0
+13,2026-11-12,JE-13,Paid for newspaper advertisement,1010,Cash,0.0,800.0
+14,2026-11-13,JE-14,Billed another client for services on account,1020,Accounts Receivable,5000.0,0.0
+14,2026-11-13,JE-14,Billed another client for services on account,4010,Service Revenue,0.0,5000.0
+15,2026-11-14,JE-15,Purchased additional supplies for cash,1030,Supplies,700.0,0.0
+15,2026-11-14,JE-15,Purchased additional supplies for cash,1010,Cash,0.0,700.0
+16,2026-11-15,JE-16,Made partial repayment of bank note,2020,Notes Payable,2500.0,0.0
+16,2026-11-15,JE-16,Made partial repayment of bank note,1010,Cash,0.0,2500.0
+17,2026-11-16,JE-17,Received cash for services rendered,1010,Cash,3200.0,0.0
+17,2026-11-16,JE-17,Received cash for services rendered,4010,Service Revenue,0.0,3200.0
+18,2026-11-17,JE-18,Paid remaining balance to supplier,2010,Accounts Payable,2000.0,0.0
+18,2026-11-17,JE-18,Paid remaining balance to supplier,1010,Cash,0.0,2000.0
+19,2026-11-19,DEMO,Demo cash sale recorded at 21:44:18,1010,Cash,1000.0,0.0
+19,2026-11-19,DEMO,Demo cash sale recorded at 21:44:18,4010,Service Revenue,0.0,1000.0
+20,2026-11-19,DEMO,Demo cash sale recorded at 21:44:38,1010,Cash,1000.0,0.0
+20,2026-11-19,DEMO,Demo cash sale recorded at 21:44:38,4010,Service Revenue,0.0,1000.0
+21,2026-11-19,DEMO,Demo cash sale recorded at 21:45:09,1010,Cash,1000.0,0.0
+21,2026-11-19,DEMO,Demo cash sale recorded at 21:45:09,4010,Service Revenue,0.0,1000.0
+22,2026-11-19,DEMO,Demo cash sale recorded at 21:47:31,1010,Cash,1000.0,0.0
+22,2026-11-19,DEMO,Demo cash sale recorded at 21:47:31,4010,Service Revenue,0.0,1000.0
+23,2026-11-19,DEMO,Demo cash sale recorded at 21:51:06,1010,Cash,1000.0,0.0
+23,2026-11-19,DEMO,Demo cash sale recorded at 21:51:06,4010,Service Revenue,0.0,1000.0

@@ -1,0 +1,49 @@
+@startuml architecture
+title System Architecture - Small Business Accounting System
+
+skinparam componentStyle rectangle
+
+package "Streamlit UI" {
+  [bookkeeping_app.py] as UI
+  note right of UI
+    8 pages:
+    Chart of Accounts
+    Record Transaction
+    Journal
+    General Ledger
+    Trial Balance
+    Income Statement
+    Balance Sheet
+    Export Reports
+  end note
+}
+
+package "Accounting Engine" {
+  [app/accounting.py] as ENGINE
+  note right of ENGINE
+    add_account()
+    post_entry()
+    get_journal()
+    get_ledger()
+    get_trial_balance()
+    get_income_statement()
+    get_balance_sheet()
+    enforces: sum(debit) == sum(credit)
+  end note
+}
+
+package "Data Access" {
+  [app/db.py] as DB
+  note right of DB
+    SQLite connection
+    schema (3 tables)
+  end note
+}
+
+database "data/bookkeeper.db" as SQLITE
+
+UI --> ENGINE
+ENGINE --> DB
+DB --> SQLITE
+
+@enduml

@@ -1,0 +1,41 @@
+@startuml er_diagram
+title Database Design - ER Diagram
+
+skinparam linetype ortho
+skinparam nodesep 60
+skinparam ranksep 70
+
+entity "accounts" as accounts {
+  * id : INTEGER <<PK>>
+  --
+  * code : TEXT <<unique>>
+  * name : TEXT <<unique>>
+  * type : TEXT
+  <i>[Asset/Liability/Equity/Revenue/Expense]</i>
+  * normal_balance : TEXT
+  <i>[Debit/Credit]</i>
+}
+
+entity "journal_entries" as journal_entries {
+  * id : INTEGER <<PK>>
+  --
+  * entry_date : TEXT
+  reference : TEXT
+  * description : TEXT
+}
+
+entity "journal_lines" as journal_lines {
+  * id : INTEGER <<PK>>
+  --
+  * entry_id : INTEGER <<FK>>
+  * account_id : INTEGER <<FK>>
+  * debit : REAL
+  * credit : REAL
+  <i>CHECK: debit >= 0, credit >= 0</i>
+  <i>CHECK: not (debit > 0 and credit > 0)</i>
+}
+
+accounts ||--o{ journal_lines : "1 account to N postings"
+journal_entries ||--o{ journal_lines : "1 entry to N lines"
+
+@enduml
